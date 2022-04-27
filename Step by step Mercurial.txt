@@ -1,0 +1,22 @@
+hg config -e
+
+//creazione username tipo
+[ui]
+username = <vostra email @studenti.unipd.it>
+
+[extensions]
+churn = 
+histedit = 
+mq = 
+rebase = 
+strip =
+
+hg branch (dice la cartella di lavoro; per aggiornare le slide si deve essere su default)
+Quindi al massimo fare
+hg checkout default
+
+Per aggiornare la repo e prendersi le modifiche dal prof:
+hg pull https://hg.sr.ht/~michelemauro/pdp2021-pub
+per poi fare update e rendere effettive le modifiche:
+hg update 
+
