@@ -1,0 +1,10 @@
+Nessuna risposta a nessuna domanda risulta in punteggio negativo.
+Nelle domande con più risposte corrette, ogni risposta corretta vale una frazione di punteggio,
+mentre una risposta errata porta il punteggio a 0.
+Per esempio, in una domanda con 4 risposte corrette su 6 opzioni:
+- 4 risposte corrette equivalgono ad 1 punto
+- 2 risposte corrette equivalgono a 0.5 punti
+- 2 risposte corrette ed una errata equivalgono a 0 punto
+- 4 risposte corrette ed una errata equivalgono a 0 punti
+
+Il 30 e Lode si raggiunge anche con meno della totalità delle risposte esatte.
