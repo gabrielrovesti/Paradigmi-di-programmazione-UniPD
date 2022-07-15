@@ -1,0 +1,1 @@
+docker run --net net20 --ip 172.20.1.10 -m 128Mb --rm --name ctserver app2020/ctserver

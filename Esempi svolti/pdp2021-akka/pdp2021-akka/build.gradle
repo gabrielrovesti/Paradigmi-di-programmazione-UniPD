@@ -1,0 +1,42 @@
+plugins {
+  id 'java'
+  id 'application'
+  id "com.diffplug.spotless" version "6.6.1"
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+  implementation 'com.typesafe.akka:akka-actor-typed_2.13:2.6.19'
+  implementation 'ch.qos.logback:logback-classic:1.2.11'
+  testImplementation 'com.typesafe.akka:akka-actor-testkit-typed_2.13:2.6.19'
+  testImplementation 'junit:junit:4.13.2'
+}
+
+mainClassName = "com.example.AkkaQuickstart"
+
+run {
+  standardInput = System.in
+}
+
+spotless {
+
+  format 'misc', {
+    target '*.gradle', '.hgignore'
+
+    trimTrailingWhitespace()
+    indentWithSpaces()
+    endWithNewline()
+  }
+  java {
+    toggleOffOn()
+
+    importOrder()
+    removeUnusedImports()
+
+    googleJavaFormat()
+  }
+}

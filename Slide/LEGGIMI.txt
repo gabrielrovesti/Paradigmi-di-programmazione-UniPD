@@ -1,0 +1,4 @@
+Attenzione:
+al momento dalla repo del prof le slide sono in formato HTML e non in PDF.
+Consiglio di scaricarsele e di scorrerle con le freccette laterali.
+Altrimenti da qua si vede solo il codice puro HTML.

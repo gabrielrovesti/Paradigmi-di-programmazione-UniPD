@@ -1,0 +1,8 @@
+syntax: glob
+.classpath
+.gradle
+.project
+.settings
+.vscode
+bin
+build

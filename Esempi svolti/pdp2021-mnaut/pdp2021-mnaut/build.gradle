@@ -1,0 +1,62 @@
+plugins {
+  id "com.diffplug.spotless" version "6.6.1"
+  id "com.github.johnrengelman.shadow" version "7.1.2"
+  id "io.micronaut.application" version "3.4.0"
+}
+
+version = "1.0"
+group = "it.unipd.pdp2021.mnaut"
+
+repositories {
+  mavenCentral()
+}
+
+micronaut {
+  runtime("netty")
+  testRuntime("junit5")
+  processing {
+    incremental(true)
+    annotations("it.unipd.pdp2021.mnaut.*")
+  }
+}
+
+dependencies {
+  implementation("io.micronaut:micronaut-validation:3.4.3")
+  implementation("io.micronaut:micronaut-runtime:3.4.3")
+  implementation("io.micronaut:micronaut-http-client:3.4.3")
+  testImplementation 'javax.inject:javax.inject:1'
+  runtimeOnly("ch.qos.logback:logback-classic")
+}
+
+
+application {
+  mainClass.set("it.unipd.pdp2021.mnaut.Application")
+}
+
+java {
+  sourceCompatibility = JavaVersion.toVersion("17")
+  targetCompatibility = JavaVersion.toVersion("17")
+}
+
+tasks {
+
+}
+
+spotless {
+
+  format 'misc', {
+    target '*.gradle', '.hgignore'
+
+    trimTrailingWhitespace()
+    indentWithSpaces()
+    endWithNewline()
+  }
+  java {
+    toggleOffOn()
+
+    importOrder()
+    removeUnusedImports()
+
+    googleJavaFormat()
+  }
+}

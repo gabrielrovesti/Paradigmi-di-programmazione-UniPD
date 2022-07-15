@@ -1,0 +1,14 @@
+Informazioni sulle slide:
+
+Se immutate dall'anno precedente 2020-2021 le ho riprese da lì
+e rimesse nella cartella. Tutti gli altri cambiamenti
+sono stati inclusi, facendo screen manualmente di tutto il nuovo set di slide
+
+Trick utili:
+- premere S mentre si è in una slide
+attiva la modalità Speaker usando reveal.js.
+Usarla per vedere informazioni aggiuntive sulle slide.
+-premere O fa vedere tutte le slide e si può accedere
+direttamente ad una specifica cliccandoci sopra
+-premere V o B mette in pausa la presentazione
+-premere F va in fullscreen

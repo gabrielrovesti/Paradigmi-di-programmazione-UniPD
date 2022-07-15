@@ -1,0 +1,12 @@
+data/gradle.properties.i
+data/gradle/wrapper/gradle-wrapper.jar.i
+data/src/main/java/it/unipd/app2020/ctserver/Main.java.i
+data/settings.gradle.i
+data/load.sh.i
+data/build.gradle.i
+data/.hgignore.i
+data/server.sh.i
+data/src/main/java/it/unipd/pdp2021/ctserver/Main.java.i
+data/gradlew.i
+data/gradlew.bat.i
+data/gradle/wrapper/gradle-wrapper.properties.i

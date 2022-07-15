@@ -1,0 +1,8 @@
+data/src/main/resources/logback.xml.i
+data/src/test/java/com/example/AkkaQuickstartTest.java.i
+data/build.gradle.i
+data/src/main/java/com/example/HelloWorld.java.i
+data/src/main/java/com/example/HelloWorldMain.java.i
+data/.hgignore.i
+data/src/main/java/com/example/HelloWorldBot.java.i
+data/src/main/java/com/example/AkkaQuickstart.java.i
